@@ -1,9 +1,15 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import ProfileClient from "./ProfileClient";
+import ProfileServer from "./ProfileServer";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <a href="/api/auth/login">Login</a>
+      <a href="/api/auth/logout">Logout</a>
+      <ProfileClient />
+      <ProfileServer />
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -15,7 +21,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -91,5 +97,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
