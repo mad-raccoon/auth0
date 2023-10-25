@@ -8,6 +8,7 @@ export default function Home() {
     <main className={styles.main}>
       <a href="/api/auth/login">Login</a>
       <a href="/api/auth/logout">Logout</a>
+      <a href="/user">User</a>
       <ProfileClient />
       {/* <ProfileServer /> */}
       <div className={styles.description}>
