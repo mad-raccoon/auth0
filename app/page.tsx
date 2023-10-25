@@ -1,15 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import ProfileClient from "./ProfileClient";
-import ProfileServer from "./ProfileServer";
+// import ProfileServer from "./ProfileServer";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <a href="/api/auth/login">Login</a>
       <a href="/api/auth/logout">Logout</a>
-      {/* <ProfileClient />
-      <ProfileServer /> */}
+      <ProfileClient />
+      {/* <ProfileServer /> */}
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
